@@ -39,7 +39,7 @@
     }
   ],
   "data": {
-    "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/refs/heads/main/dataset/Victimisation_Rate_v1.3.csv"
+    "url": "dataset/Victimisation_Rate_v1.3.csv"
   },
   "transform": [
     {"filter": "datum['State/Territory'] == State_selection"},

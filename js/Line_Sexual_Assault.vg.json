@@ -4,7 +4,7 @@
   "height": 338,
   "title": "Crime Type: Sexual Assault (Females Only - Male Data Unavailable)",
   "data": {
-    "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/refs/heads/main/dataset/National_4c_v1.1.csv"
+    "url": "dataset/National_4c_v1.1.csv"
   },
   "params": [
     {

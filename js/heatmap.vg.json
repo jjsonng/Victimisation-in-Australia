@@ -3,7 +3,7 @@
   "width": 520,
   "height": 315,
   "data": {
-    "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/refs/heads/main/dataset/Victimisation_Rate_National_v1.2.csv"
+    "url": "dataset/Victimisation_Rate_National_v1.2.csv"
   },
   "params": [
     {

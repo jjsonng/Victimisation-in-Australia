@@ -22,21 +22,21 @@
       "layer": [
         {
           "data": {
-            "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/refs/heads/main/js/NE%20Graticules%2030.json",
+            "url": "js/NE Graticules 30.json",
             "format": {"type": "topojson", "feature": "ne_50m_graticules_30"}
           },
           "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
         },
         {
           "data": {
-            "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/refs/heads/main/dataset/Victimisation_Rate_v1.3.csv"
+            "url": "dataset/Victimisation_Rate_v1.3.csv"
           },
           "transform": [
             {
               "lookup": "State/Territory",
               "from": {
                 "data": {
-                  "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/d9b6ab4f5747814642d07f45ee139cf99049fb87/js/Australia_map.json",
+                  "url": "js/Australia_map.json",
                   "format": {
                     "type": "topojson",
                     "feature": "ne_50m_admin_1_states_provinces"
@@ -124,7 +124,7 @@
       "height": 281,
       "mark": "bar",
       "data": {
-        "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/refs/heads/main/dataset/Victimisation_Rate_v1.3.csv"
+        "url": "dataset/Victimisation_Rate_v1.3.csv"
       },
       "transform": [{"filter": "datum.Year == Year_selection"}],
       "encoding": {

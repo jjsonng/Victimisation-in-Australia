@@ -2,9 +2,9 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 575,
     "height": 380,
-    "data": {
-      "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/refs/heads/main/dataset/National_7c_v1.0.csv"
-    },
+  "data": {
+    "url": "dataset/National_7c_v1.0.csv"
+  },
     "params": [
       {
         "name": "year_selection",
