@@ -1,0 +1,124 @@
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2 {
+    background-color: aliceblue;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.container {
+    min-width: 1085px;
+    max-width: 1085px;
+    justify-content: center;
+}
+
+.sexual_assault_container {
+    margin-top: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.household_crime_container {
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+.trend-container {
+    margin-top: 1rem;
+}
+
+#heatmap {
+    margin-top: 1rem;
+}
+
+#physicalAssault {
+    margin-top: 0.5rem;
+}
+
+#sexualAssault {
+    margin-top: 2rem;
+}
+
+#choropleth_map {
+    margin-top: 0.5rem;
+}
+
+#trend {
+    margin-top: 1.8em;
+    margin-bottom: 3.5rem;
+}
+
+.text-left-1 {
+    background-color: aliceblue;
+    line-height: 1.5;
+    text-align: left;
+    margin-right: 2rem;
+    padding: 1.5rem;
+}
+
+.text-left-2 {
+    background-color: aliceblue;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    padding: 1.5rem;
+}
+
+.text-left-3 {
+    background-color: aliceblue;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+    padding: 1.5rem;
+}
+
+.text-right-1 {
+    background-color: aliceblue;
+    line-height: 1.5;
+    text-align: left;
+    margin-left: 2rem;
+    padding: 1.5rem;
+}
+
+.text-right-2 {
+    background-color: aliceblue;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 2.3rem;
+    margin-left: 2rem;
+    padding: 1.5rem;
+}
+
+.text-container-2 {
+    background-color: aliceblue;
+    margin-top: 1.5rem;
+    margin-bottom: 3.5rem;
+    padding: 1.5rem;
+    justify-content: space-between;
+}
+
+.text-2,
+.text-3,
+.text-4,
+.text-5,
+.text-6 {
+    line-height: 1.5;
+    text-align: left;
+}
+
+footer {
+    background-color: aliceblue;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}

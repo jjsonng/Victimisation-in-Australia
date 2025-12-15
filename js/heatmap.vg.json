@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 520,
+  "height": 315,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/refs/heads/main/dataset/Victimisation_Rate_National_v1.2.csv"
+  },
+  "params": [
+    {
+      "name": "Sex_selection",
+      "bind": {
+        "input": "select",
+        "options": [null, "Male", "Female"],
+        "labels": ["Show All", "Male", "Female"],
+        "name": "Sex: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "Sex_selection == null || datum.Sex == Sex_selection"},
+    {
+      "aggregate": [
+        {
+          "op": "mean",
+          "field": "Victimisation Rate",
+          "as": "Avg_Victimisation_Rate"
+        },
+        {"op": "sum", "field": "Person", "as": "Total_Person"}
+      ],
+      "groupby": ["Year", "Crime Type", "Sex"]
+    },
+    {
+      "window": [
+        {
+          "op": "mean",
+          "field": "Avg_Victimisation_Rate",
+          "as": "All_Victimisation_Rate"
+        },
+        {"op": "sum", "field": "Total_Person", "as": "All_Person"}
+      ],
+      "frame": [null, null],
+      "groupby": ["Year", "Crime Type"],
+      "ignorePeers": true
+    },
+    {
+      "calculate": "Sex_selection == null ? datum.All_Victimisation_Rate : datum.Avg_Victimisation_Rate",
+      "as": "DisplayVictimisationRate"
+    },
+    {
+      "calculate": "Sex_selection == null ? datum.All_Person : datum.Total_Person",
+      "as": "DisplayPerson"
+    },
+    {
+      "calculate": "Sex_selection == null ? 'Male and Female' : datum.Sex",
+      "as": "DisplaySex"
+    }
+  ],
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": "Year",
+      "axis": {"labelAngle": 0}
+    },
+    "y": {"field": "Crime Type", "type": "ordinal", "title": "Crime Type"},
+    "color": {
+      "field": "DisplayVictimisationRate",
+      "type": "quantitative",
+      "title": "Victimisation Rate (%)",
+      "scale": {"domain": [0, 10]}
+    },
+    "tooltip": [
+      {"field": "Year", "type": "ordinal", "title": "Year"},
+      {"field": "Crime Type", "type": "nominal", "title": "Crime Type"},
+      {"field": "DisplaySex", "type": "nominal", "title": "Sex"},
+      {
+        "field": "DisplayPerson",
+        "type": "quantitative",
+        "title": "Number of Victims",
+        "format": ","
+      },
+      {
+        "field": "DisplayVictimisationRate",
+        "type": "quantitative",
+        "title": "Victimisation Rate (%)",
+        "format": ".1f"
+      }
+    ]
+  }
+}

@@ -1,0 +1,601 @@
+﻿State/Territory,Crime Type,Year,Victimisation Rate
+New South Wales,Physical Assault,2008,2.8
+New South Wales,Physical Assault,2009,2.4
+New South Wales,Physical Assault,2010,2.8
+New South Wales,Physical Assault,2011,2.7
+New South Wales,Physical Assault,2012,2.2
+New South Wales,Physical Assault,2013,2.0
+New South Wales,Physical Assault,2014,1.6
+New South Wales,Physical Assault,2015,2.0
+New South Wales,Physical Assault,2016,2.1
+New South Wales,Physical Assault,2017,2.2
+New South Wales,Physical Assault,2018,2.2
+New South Wales,Physical Assault,2019,2.3
+New South Wales,Physical Assault,2020,1.9
+New South Wales,Physical Assault,2021,1.5
+New South Wales,Physical Assault,2022,1.3
+Victoria,Physical Assault,2008,3.3
+Victoria,Physical Assault,2009,2.6
+Victoria,Physical Assault,2010,2.0
+Victoria,Physical Assault,2011,3.0
+Victoria,Physical Assault,2012,2.6
+Victoria,Physical Assault,2013,2.0
+Victoria,Physical Assault,2014,2.1
+Victoria,Physical Assault,2015,2.5
+Victoria,Physical Assault,2016,2.4
+Victoria,Physical Assault,2017,2.0
+Victoria,Physical Assault,2018,2.4
+Victoria,Physical Assault,2019,1.9
+Victoria,Physical Assault,2020,1.5
+Victoria,Physical Assault,2021,1.8
+Victoria,Physical Assault,2022,1.6
+Queensland,Physical Assault,2008,3.0
+Queensland,Physical Assault,2009,3.5
+Queensland,Physical Assault,2010,3.1
+Queensland,Physical Assault,2011,3.1
+Queensland,Physical Assault,2012,3.1
+Queensland,Physical Assault,2013,2.3
+Queensland,Physical Assault,2014,2.5
+Queensland,Physical Assault,2015,2.6
+Queensland,Physical Assault,2016,2.4
+Queensland,Physical Assault,2017,3.1
+Queensland,Physical Assault,2018,2.4
+Queensland,Physical Assault,2019,2.7
+Queensland,Physical Assault,2020,2.3
+Queensland,Physical Assault,2021,2.3
+Queensland,Physical Assault,2022,2.3
+South Australia,Physical Assault,2008,2.8
+South Australia,Physical Assault,2009,3.3
+South Australia,Physical Assault,2010,2.4
+South Australia,Physical Assault,2011,2.8
+South Australia,Physical Assault,2012,2.6
+South Australia,Physical Assault,2013,2.7
+South Australia,Physical Assault,2014,2.7
+South Australia,Physical Assault,2015,2.0
+South Australia,Physical Assault,2016,2.2
+South Australia,Physical Assault,2017,2.4
+South Australia,Physical Assault,2018,2.3
+South Australia,Physical Assault,2019,2.1
+South Australia,Physical Assault,2020,3.0
+South Australia,Physical Assault,2021,1.6
+South Australia,Physical Assault,2022,1.4
+Western Australia,Physical Assault,2008,3.8
+Western Australia,Physical Assault,2009,3.9
+Western Australia,Physical Assault,2010,3.4
+Western Australia,Physical Assault,2011,3.3
+Western Australia,Physical Assault,2012,3.5
+Western Australia,Physical Assault,2013,2.9
+Western Australia,Physical Assault,2014,2.6
+Western Australia,Physical Assault,2015,3.6
+Western Australia,Physical Assault,2016,2.9
+Western Australia,Physical Assault,2017,2.6
+Western Australia,Physical Assault,2018,2.5
+Western Australia,Physical Assault,2019,3.0
+Western Australia,Physical Assault,2020,2.6
+Western Australia,Physical Assault,2021,2.3
+Western Australia,Physical Assault,2022,1.9
+Tasmania,Physical Assault,2008,4.1
+Tasmania,Physical Assault,2009,2.9
+Tasmania,Physical Assault,2010,3.1
+Tasmania,Physical Assault,2011,4.0
+Tasmania,Physical Assault,2012,2.6
+Tasmania,Physical Assault,2013,3.3
+Tasmania,Physical Assault,2014,2.5
+Tasmania,Physical Assault,2015,2.1
+Tasmania,Physical Assault,2016,2.0
+Tasmania,Physical Assault,2017,2.4
+Tasmania,Physical Assault,2018,2.6
+Tasmania,Physical Assault,2019,2.4
+Tasmania,Physical Assault,2020,2.6
+Tasmania,Physical Assault,2021,1.9
+Tasmania,Physical Assault,2022,1.8
+Northern Territory,Physical Assault,2008,5.7
+Northern Territory,Physical Assault,2009,5.3
+Northern Territory,Physical Assault,2010,5.7
+Northern Territory,Physical Assault,2011,4.6
+Northern Territory,Physical Assault,2012,4.6
+Northern Territory,Physical Assault,2013,5.0
+Northern Territory,Physical Assault,2014,4.1
+Northern Territory,Physical Assault,2015,5.0
+Northern Territory,Physical Assault,2016,4.9
+Northern Territory,Physical Assault,2017,3.7
+Northern Territory,Physical Assault,2018,5.0
+Northern Territory,Physical Assault,2019,2.4
+Northern Territory,Physical Assault,2020,2.5
+Northern Territory,Physical Assault,2021,3.5
+Northern Territory,Physical Assault,2022,4.2
+Australian Capital Territory,Physical Assault,2008,2.8
+Australian Capital Territory,Physical Assault,2009,2.7
+Australian Capital Territory,Physical Assault,2010,3.2
+Australian Capital Territory,Physical Assault,2011,4.7
+Australian Capital Territory,Physical Assault,2012,2.6
+Australian Capital Territory,Physical Assault,2013,2.6
+Australian Capital Territory,Physical Assault,2014,2.3
+Australian Capital Territory,Physical Assault,2015,1.5
+Australian Capital Territory,Physical Assault,2016,2.2
+Australian Capital Territory,Physical Assault,2017,2.5
+Australian Capital Territory,Physical Assault,2018,2.1
+Australian Capital Territory,Physical Assault,2019,1.8
+Australian Capital Territory,Physical Assault,2020,1.8
+Australian Capital Territory,Physical Assault,2021,1.0
+Australian Capital Territory,Physical Assault,2022,1.2
+New South Wales,Direct Threat,2008,3.7
+New South Wales,Direct Threat,2009,2.6
+New South Wales,Direct Threat,2010,2.4
+New South Wales,Direct Threat,2011,2.9
+New South Wales,Direct Threat,2012,2.4
+New South Wales,Direct Threat,2013,2.5
+New South Wales,Direct Threat,2014,2.1
+New South Wales,Direct Threat,2015,2.1
+New South Wales,Direct Threat,2016,2.2
+New South Wales,Direct Threat,2017,2.3
+New South Wales,Direct Threat,2018,2.6
+New South Wales,Direct Threat,2019,2.1
+New South Wales,Direct Threat,2020,1.8
+New South Wales,Direct Threat,2021,1.7
+New South Wales,Direct Threat,2022,1.9
+Victoria,Direct Threat,2008,4.0
+Victoria,Direct Threat,2009,3.1
+Victoria,Direct Threat,2010,3.4
+Victoria,Direct Threat,2011,2.9
+Victoria,Direct Threat,2012,2.6
+Victoria,Direct Threat,2013,2.4
+Victoria,Direct Threat,2014,2.8
+Victoria,Direct Threat,2015,2.5
+Victoria,Direct Threat,2016,3.0
+Victoria,Direct Threat,2017,2.7
+Victoria,Direct Threat,2018,2.8
+Victoria,Direct Threat,2019,2.3
+Victoria,Direct Threat,2020,1.9
+Victoria,Direct Threat,2021,2.1
+Victoria,Direct Threat,2022,2.0
+Queensland,Direct Threat,2008,3.9
+Queensland,Direct Threat,2009,3.5
+Queensland,Direct Threat,2010,3.2
+Queensland,Direct Threat,2011,3.8
+Queensland,Direct Threat,2012,2.8
+Queensland,Direct Threat,2013,2.8
+Queensland,Direct Threat,2014,3.0
+Queensland,Direct Threat,2015,2.7
+Queensland,Direct Threat,2016,2.4
+Queensland,Direct Threat,2017,2.4
+Queensland,Direct Threat,2018,2.8
+Queensland,Direct Threat,2019,2.8
+Queensland,Direct Threat,2020,2.8
+Queensland,Direct Threat,2021,2.1
+Queensland,Direct Threat,2022,2.8
+South Australia,Direct Threat,2008,4.0
+South Australia,Direct Threat,2009,3.3
+South Australia,Direct Threat,2010,3.0
+South Australia,Direct Threat,2011,3.3
+South Australia,Direct Threat,2012,3.4
+South Australia,Direct Threat,2013,2.3
+South Australia,Direct Threat,2014,3.0
+South Australia,Direct Threat,2015,2.6
+South Australia,Direct Threat,2016,2.2
+South Australia,Direct Threat,2017,2.6
+South Australia,Direct Threat,2018,2.6
+South Australia,Direct Threat,2019,2.2
+South Australia,Direct Threat,2020,2.1
+South Australia,Direct Threat,2021,2.3
+South Australia,Direct Threat,2022,1.9
+Western Australia,Direct Threat,2008,4.1
+Western Australia,Direct Threat,2009,3.1
+Western Australia,Direct Threat,2010,3.7
+Western Australia,Direct Threat,2011,4.1
+Western Australia,Direct Threat,2012,3.4
+Western Australia,Direct Threat,2013,4.0
+Western Australia,Direct Threat,2014,3.0
+Western Australia,Direct Threat,2015,3.8
+Western Australia,Direct Threat,2016,3.4
+Western Australia,Direct Threat,2017,2.9
+Western Australia,Direct Threat,2018,2.8
+Western Australia,Direct Threat,2019,3.3
+Western Australia,Direct Threat,2020,2.5
+Western Australia,Direct Threat,2021,3.3
+Western Australia,Direct Threat,2022,2.8
+Tasmania,Direct Threat,2008,4.7
+Tasmania,Direct Threat,2009,4.0
+Tasmania,Direct Threat,2010,4.0
+Tasmania,Direct Threat,2011,4.4
+Tasmania,Direct Threat,2012,3.7
+Tasmania,Direct Threat,2013,3.3
+Tasmania,Direct Threat,2014,3.1
+Tasmania,Direct Threat,2015,2.6
+Tasmania,Direct Threat,2016,3.0
+Tasmania,Direct Threat,2017,3.1
+Tasmania,Direct Threat,2018,3.7
+Tasmania,Direct Threat,2019,3.3
+Tasmania,Direct Threat,2020,2.7
+Tasmania,Direct Threat,2021,2.8
+Tasmania,Direct Threat,2022,1.8
+Northern Territory,Direct Threat,2008,7.6
+Northern Territory,Direct Threat,2009,6.9
+Northern Territory,Direct Threat,2010,4.8
+Northern Territory,Direct Threat,2011,6.8
+Northern Territory,Direct Threat,2012,4.0
+Northern Territory,Direct Threat,2013,3.2
+Northern Territory,Direct Threat,2014,2.9
+Northern Territory,Direct Threat,2015,4.6
+Northern Territory,Direct Threat,2016,3.0
+Northern Territory,Direct Threat,2017,3.9
+Northern Territory,Direct Threat,2018,4.4
+Northern Territory,Direct Threat,2019,4.4
+Northern Territory,Direct Threat,2020,3.2
+Northern Territory,Direct Threat,2021,4.6
+Northern Territory,Direct Threat,2022,4.3
+Australian Capital Territory,Direct Threat,2008,4.8
+Australian Capital Territory,Direct Threat,2009,2.7
+Australian Capital Territory,Direct Threat,2010,3.7
+Australian Capital Territory,Direct Threat,2011,3.2
+Australian Capital Territory,Direct Threat,2012,3.4
+Australian Capital Territory,Direct Threat,2013,2.1
+Australian Capital Territory,Direct Threat,2014,3.4
+Australian Capital Territory,Direct Threat,2015,2.3
+Australian Capital Territory,Direct Threat,2016,2.0
+Australian Capital Territory,Direct Threat,2017,2.2
+Australian Capital Territory,Direct Threat,2018,1.9
+Australian Capital Territory,Direct Threat,2019,2.7
+Australian Capital Territory,Direct Threat,2020,2.0
+Australian Capital Territory,Direct Threat,2021,2.9
+Australian Capital Territory,Direct Threat,2022,2.0
+New South Wales,Indirect Threat,2008,0.9
+New South Wales,Indirect Threat,2009,0.6
+New South Wales,Indirect Threat,2010,0.7
+New South Wales,Indirect Threat,2011,0.9
+New South Wales,Indirect Threat,2012,0.9
+New South Wales,Indirect Threat,2013,0.9
+New South Wales,Indirect Threat,2014,0.8
+New South Wales,Indirect Threat,2015,0.9
+New South Wales,Indirect Threat,2016,0.8
+New South Wales,Indirect Threat,2017,0.9
+New South Wales,Indirect Threat,2018,0.8
+New South Wales,Indirect Threat,2019,0.6
+New South Wales,Indirect Threat,2020,0.6
+New South Wales,Indirect Threat,2021,0.6
+New South Wales,Indirect Threat,2022,0.7
+Victoria,Indirect Threat,2008,1.4
+Victoria,Indirect Threat,2009,1.0
+Victoria,Indirect Threat,2010,1.1
+Victoria,Indirect Threat,2011,1.0
+Victoria,Indirect Threat,2012,1.1
+Victoria,Indirect Threat,2013,0.8
+Victoria,Indirect Threat,2014,1.0
+Victoria,Indirect Threat,2015,0.9
+Victoria,Indirect Threat,2016,1.0
+Victoria,Indirect Threat,2017,0.9
+Victoria,Indirect Threat,2018,1.1
+Victoria,Indirect Threat,2019,0.7
+Victoria,Indirect Threat,2020,0.7
+Victoria,Indirect Threat,2021,0.5
+Victoria,Indirect Threat,2022,0.6
+Queensland,Indirect Threat,2008,1.2
+Queensland,Indirect Threat,2009,1.0
+Queensland,Indirect Threat,2010,1.0
+Queensland,Indirect Threat,2011,1.5
+Queensland,Indirect Threat,2012,1.4
+Queensland,Indirect Threat,2013,1.1
+Queensland,Indirect Threat,2014,1.1
+Queensland,Indirect Threat,2015,1.2
+Queensland,Indirect Threat,2016,1.0
+Queensland,Indirect Threat,2017,0.7
+Queensland,Indirect Threat,2018,1.3
+Queensland,Indirect Threat,2019,1.2
+Queensland,Indirect Threat,2020,1.1
+Queensland,Indirect Threat,2021,0.7
+Queensland,Indirect Threat,2022,0.9
+South Australia,Indirect Threat,2008,1.4
+South Australia,Indirect Threat,2009,0.8
+South Australia,Indirect Threat,2010,1.2
+South Australia,Indirect Threat,2011,1.5
+South Australia,Indirect Threat,2012,1.2
+South Australia,Indirect Threat,2013,1.0
+South Australia,Indirect Threat,2014,1.7
+South Australia,Indirect Threat,2015,1.3
+South Australia,Indirect Threat,2016,1.0
+South Australia,Indirect Threat,2017,0.9
+South Australia,Indirect Threat,2018,1.4
+South Australia,Indirect Threat,2019,1.0
+South Australia,Indirect Threat,2020,0.7
+South Australia,Indirect Threat,2021,0.7
+South Australia,Indirect Threat,2022,0.6
+Western Australia,Indirect Threat,2008,1.3
+Western Australia,Indirect Threat,2009,0.9
+Western Australia,Indirect Threat,2010,1.0
+Western Australia,Indirect Threat,2011,1.4
+Western Australia,Indirect Threat,2012,1.2
+Western Australia,Indirect Threat,2013,1.3
+Western Australia,Indirect Threat,2014,1.1
+Western Australia,Indirect Threat,2015,1.0
+Western Australia,Indirect Threat,2016,1.3
+Western Australia,Indirect Threat,2017,0.7
+Western Australia,Indirect Threat,2018,0.7
+Western Australia,Indirect Threat,2019,1.4
+Western Australia,Indirect Threat,2020,1.1
+Western Australia,Indirect Threat,2021,1.3
+Western Australia,Indirect Threat,2022,1.0
+Tasmania,Indirect Threat,2008,1.8
+Tasmania,Indirect Threat,2009,1.4
+Tasmania,Indirect Threat,2010,2.0
+Tasmania,Indirect Threat,2011,2.6
+Tasmania,Indirect Threat,2012,1.5
+Tasmania,Indirect Threat,2013,2.1
+Tasmania,Indirect Threat,2014,1.1
+Tasmania,Indirect Threat,2015,1.2
+Tasmania,Indirect Threat,2016,1.2
+Tasmania,Indirect Threat,2017,1.2
+Tasmania,Indirect Threat,2018,1.5
+Tasmania,Indirect Threat,2019,1.7
+Tasmania,Indirect Threat,2020,1.0
+Tasmania,Indirect Threat,2021,1.3
+Tasmania,Indirect Threat,2022,1.0
+Northern Territory,Indirect Threat,2008,1.9
+Northern Territory,Indirect Threat,2009,1.9
+Northern Territory,Indirect Threat,2010,0.8
+Northern Territory,Indirect Threat,2011,1.5
+Northern Territory,Indirect Threat,2012,0.7
+Northern Territory,Indirect Threat,2013,1.1
+Northern Territory,Indirect Threat,2014,0.8
+Northern Territory,Indirect Threat,2015,0.3
+Northern Territory,Indirect Threat,2016,1.0
+Northern Territory,Indirect Threat,2017,0.9
+Northern Territory,Indirect Threat,2018,1.4
+Northern Territory,Indirect Threat,2019,1.0
+Northern Territory,Indirect Threat,2020,0.8
+Northern Territory,Indirect Threat,2021,1.2
+Northern Territory,Indirect Threat,2022,2.0
+Australian Capital Territory,Indirect Threat,2008,1.5
+Australian Capital Territory,Indirect Threat,2009,0.5
+Australian Capital Territory,Indirect Threat,2010,1.2
+Australian Capital Territory,Indirect Threat,2011,0.9
+Australian Capital Territory,Indirect Threat,2012,0.7
+Australian Capital Territory,Indirect Threat,2013,1.3
+Australian Capital Territory,Indirect Threat,2014,1.6
+Australian Capital Territory,Indirect Threat,2015,0.8
+Australian Capital Territory,Indirect Threat,2016,0.2
+Australian Capital Territory,Indirect Threat,2017,0.2
+Australian Capital Territory,Indirect Threat,2018,1.3
+Australian Capital Territory,Indirect Threat,2019,0.5
+Australian Capital Territory,Indirect Threat,2020,0.5
+Australian Capital Territory,Indirect Threat,2021,0.5
+Australian Capital Territory,Indirect Threat,2022,0.2
+New South Wales,Combined Threats,2008,3.8
+New South Wales,Combined Threats,2009,2.9
+New South Wales,Combined Threats,2010,2.7
+New South Wales,Combined Threats,2011,3.2
+New South Wales,Combined Threats,2012,2.7
+New South Wales,Combined Threats,2013,2.6
+New South Wales,Combined Threats,2014,2.3
+New South Wales,Combined Threats,2015,2.4
+New South Wales,Combined Threats,2016,2.4
+New South Wales,Combined Threats,2017,2.5
+New South Wales,Combined Threats,2018,2.8
+New South Wales,Combined Threats,2019,2.2
+New South Wales,Combined Threats,2020,2.1
+New South Wales,Combined Threats,2021,1.8
+New South Wales,Combined Threats,2022,2.1
+Victoria,Combined Threats,2008,4.3
+Victoria,Combined Threats,2009,3.5
+Victoria,Combined Threats,2010,3.7
+Victoria,Combined Threats,2011,3.2
+Victoria,Combined Threats,2012,2.9
+Victoria,Combined Threats,2013,2.6
+Victoria,Combined Threats,2014,2.9
+Victoria,Combined Threats,2015,2.7
+Victoria,Combined Threats,2016,3.4
+Victoria,Combined Threats,2017,3.0
+Victoria,Combined Threats,2018,3.2
+Victoria,Combined Threats,2019,2.4
+Victoria,Combined Threats,2020,2.2
+Victoria,Combined Threats,2021,2.4
+Victoria,Combined Threats,2022,2.1
+Queensland,Combined Threats,2008,4.4
+Queensland,Combined Threats,2009,3.7
+Queensland,Combined Threats,2010,3.5
+Queensland,Combined Threats,2011,4.4
+Queensland,Combined Threats,2012,3.3
+Queensland,Combined Threats,2013,3.2
+Queensland,Combined Threats,2014,3.3
+Queensland,Combined Threats,2015,3.0
+Queensland,Combined Threats,2016,2.6
+Queensland,Combined Threats,2017,2.8
+Queensland,Combined Threats,2018,3.1
+Queensland,Combined Threats,2019,3.1
+Queensland,Combined Threats,2020,3.3
+Queensland,Combined Threats,2021,2.5
+Queensland,Combined Threats,2022,3.0
+South Australia,Combined Threats,2008,4.2
+South Australia,Combined Threats,2009,3.7
+South Australia,Combined Threats,2010,3.4
+South Australia,Combined Threats,2011,3.8
+South Australia,Combined Threats,2012,3.8
+South Australia,Combined Threats,2013,2.7
+South Australia,Combined Threats,2014,3.5
+South Australia,Combined Threats,2015,3.1
+South Australia,Combined Threats,2016,2.6
+South Australia,Combined Threats,2017,2.8
+South Australia,Combined Threats,2018,3.1
+South Australia,Combined Threats,2019,2.4
+South Australia,Combined Threats,2020,2.4
+South Australia,Combined Threats,2021,2.6
+South Australia,Combined Threats,2022,2.1
+Western Australia,Combined Threats,2008,4.4
+Western Australia,Combined Threats,2009,3.3
+Western Australia,Combined Threats,2010,3.9
+Western Australia,Combined Threats,2011,4.5
+Western Australia,Combined Threats,2012,3.8
+Western Australia,Combined Threats,2013,4.2
+Western Australia,Combined Threats,2014,3.4
+Western Australia,Combined Threats,2015,4.1
+Western Australia,Combined Threats,2016,3.7
+Western Australia,Combined Threats,2017,3.2
+Western Australia,Combined Threats,2018,2.9
+Western Australia,Combined Threats,2019,3.7
+Western Australia,Combined Threats,2020,2.8
+Western Australia,Combined Threats,2021,4.0
+Western Australia,Combined Threats,2022,2.8
+Tasmania,Combined Threats,2008,4.9
+Tasmania,Combined Threats,2009,4.4
+Tasmania,Combined Threats,2010,4.4
+Tasmania,Combined Threats,2011,4.9
+Tasmania,Combined Threats,2012,4.3
+Tasmania,Combined Threats,2013,4.3
+Tasmania,Combined Threats,2014,3.9
+Tasmania,Combined Threats,2015,3.1
+Tasmania,Combined Threats,2016,3.5
+Tasmania,Combined Threats,2017,3.5
+Tasmania,Combined Threats,2018,4.2
+Tasmania,Combined Threats,2019,3.8
+Tasmania,Combined Threats,2020,2.9
+Tasmania,Combined Threats,2021,3.1
+Tasmania,Combined Threats,2022,2.1
+Northern Territory,Combined Threats,2008,8.2
+Northern Territory,Combined Threats,2009,7.2
+Northern Territory,Combined Threats,2010,4.9
+Northern Territory,Combined Threats,2011,7.1
+Northern Territory,Combined Threats,2012,4.1
+Northern Territory,Combined Threats,2013,3.4
+Northern Territory,Combined Threats,2014,3.3
+Northern Territory,Combined Threats,2015,4.6
+Northern Territory,Combined Threats,2016,3.7
+Northern Territory,Combined Threats,2017,4.1
+Northern Territory,Combined Threats,2018,4.5
+Northern Territory,Combined Threats,2019,4.9
+Northern Territory,Combined Threats,2020,3.3
+Northern Territory,Combined Threats,2021,4.4
+Northern Territory,Combined Threats,2022,4.4
+Australian Capital Territory,Combined Threats,2008,5.6
+Australian Capital Territory,Combined Threats,2009,2.7
+Australian Capital Territory,Combined Threats,2010,4.0
+Australian Capital Territory,Combined Threats,2011,3.4
+Australian Capital Territory,Combined Threats,2012,3.6
+Australian Capital Territory,Combined Threats,2013,2.7
+Australian Capital Territory,Combined Threats,2014,3.7
+Australian Capital Territory,Combined Threats,2015,2.4
+Australian Capital Territory,Combined Threats,2016,2.1
+Australian Capital Territory,Combined Threats,2017,2.9
+Australian Capital Territory,Combined Threats,2018,2.2
+Australian Capital Territory,Combined Threats,2019,2.2
+Australian Capital Territory,Combined Threats,2020,2.2
+Australian Capital Territory,Combined Threats,2021,2.3
+Australian Capital Territory,Combined Threats,2022,1.9
+New South Wales,Combined Assaults,2008,5.7
+New South Wales,Combined Assaults,2009,4.7
+New South Wales,Combined Assaults,2010,5.2
+New South Wales,Combined Assaults,2011,5.3
+New South Wales,Combined Assaults,2012,4.4
+New South Wales,Combined Assaults,2013,4.1
+New South Wales,Combined Assaults,2014,3.7
+New South Wales,Combined Assaults,2015,4.1
+New South Wales,Combined Assaults,2016,4.1
+New South Wales,Combined Assaults,2017,4.3
+New South Wales,Combined Assaults,2018,4.4
+New South Wales,Combined Assaults,2019,3.9
+New South Wales,Combined Assaults,2020,3.6
+New South Wales,Combined Assaults,2021,3.2
+New South Wales,Combined Assaults,2022,3.0
+Victoria,Combined Assaults,2008,6.5
+Victoria,Combined Assaults,2009,5.6
+Victoria,Combined Assaults,2010,5.4
+Victoria,Combined Assaults,2011,5.7
+Victoria,Combined Assaults,2012,5.0
+Victoria,Combined Assaults,2013,4.2
+Victoria,Combined Assaults,2014,4.4
+Victoria,Combined Assaults,2015,4.7
+Victoria,Combined Assaults,2016,5.3
+Victoria,Combined Assaults,2017,4.6
+Victoria,Combined Assaults,2018,5.2
+Victoria,Combined Assaults,2019,4.1
+Victoria,Combined Assaults,2020,3.4
+Victoria,Combined Assaults,2021,3.8
+Victoria,Combined Assaults,2022,3.6
+Queensland,Combined Assaults,2008,6.5
+Queensland,Combined Assaults,2009,6.4
+Queensland,Combined Assaults,2010,5.9
+Queensland,Combined Assaults,2011,6.6
+Queensland,Combined Assaults,2012,5.7
+Queensland,Combined Assaults,2013,4.9
+Queensland,Combined Assaults,2014,4.9
+Queensland,Combined Assaults,2015,4.9
+Queensland,Combined Assaults,2016,4.5
+Queensland,Combined Assaults,2017,5.5
+Queensland,Combined Assaults,2018,4.9
+Queensland,Combined Assaults,2019,5.3
+Queensland,Combined Assaults,2020,5.0
+Queensland,Combined Assaults,2021,4.5
+Queensland,Combined Assaults,2022,4.7
+South Australia,Combined Assaults,2008,6.0
+South Australia,Combined Assaults,2009,6.4
+South Australia,Combined Assaults,2010,5.6
+South Australia,Combined Assaults,2011,5.9
+South Australia,Combined Assaults,2012,5.8
+South Australia,Combined Assaults,2013,5.0
+South Australia,Combined Assaults,2014,5.3
+South Australia,Combined Assaults,2015,4.5
+South Australia,Combined Assaults,2016,4.3
+South Australia,Combined Assaults,2017,4.4
+South Australia,Combined Assaults,2018,4.5
+South Australia,Combined Assaults,2019,4.0
+South Australia,Combined Assaults,2020,4.7
+South Australia,Combined Assaults,2021,3.7
+South Australia,Combined Assaults,2022,3.3
+Western Australia,Combined Assaults,2008,6.7
+Western Australia,Combined Assaults,2009,6.7
+Western Australia,Combined Assaults,2010,6.5
+Western Australia,Combined Assaults,2011,7.2
+Western Australia,Combined Assaults,2012,6.6
+Western Australia,Combined Assaults,2013,6.2
+Western Australia,Combined Assaults,2014,5.3
+Western Australia,Combined Assaults,2015,6.6
+Western Australia,Combined Assaults,2016,6.2
+Western Australia,Combined Assaults,2017,5.3
+Western Australia,Combined Assaults,2018,4.8
+Western Australia,Combined Assaults,2019,5.8
+Western Australia,Combined Assaults,2020,4.9
+Western Australia,Combined Assaults,2021,5.5
+Western Australia,Combined Assaults,2022,4.3
+Tasmania,Combined Assaults,2008,7.6
+Tasmania,Combined Assaults,2009,6.3
+Tasmania,Combined Assaults,2010,6.6
+Tasmania,Combined Assaults,2011,7.8
+Tasmania,Combined Assaults,2012,6.4
+Tasmania,Combined Assaults,2013,6.5
+Tasmania,Combined Assaults,2014,5.8
+Tasmania,Combined Assaults,2015,4.8
+Tasmania,Combined Assaults,2016,4.7
+Tasmania,Combined Assaults,2017,5.2
+Tasmania,Combined Assaults,2018,6.1
+Tasmania,Combined Assaults,2019,5.5
+Tasmania,Combined Assaults,2020,4.8
+Tasmania,Combined Assaults,2021,4.5
+Tasmania,Combined Assaults,2022,3.6
+Northern Territory,Combined Assaults,2008,11.6
+Northern Territory,Combined Assaults,2009,11.4
+Northern Territory,Combined Assaults,2010,9.1
+Northern Territory,Combined Assaults,2011,10.1
+Northern Territory,Combined Assaults,2012,7.7
+Northern Territory,Combined Assaults,2013,7.1
+Northern Territory,Combined Assaults,2014,6.8
+Northern Territory,Combined Assaults,2015,9.0
+Northern Territory,Combined Assaults,2016,7.0
+Northern Territory,Combined Assaults,2017,6.7
+Northern Territory,Combined Assaults,2018,8.5
+Northern Territory,Combined Assaults,2019,6.5
+Northern Territory,Combined Assaults,2020,5.6
+Northern Territory,Combined Assaults,2021,7.0
+Northern Territory,Combined Assaults,2022,7.8
+Australian Capital Territory,Combined Assaults,2008,7.1
+Australian Capital Territory,Combined Assaults,2009,4.8
+Australian Capital Territory,Combined Assaults,2010,7.0
+Australian Capital Territory,Combined Assaults,2011,7.6
+Australian Capital Territory,Combined Assaults,2012,5.6
+Australian Capital Territory,Combined Assaults,2013,5.0
+Australian Capital Territory,Combined Assaults,2014,5.6
+Australian Capital Territory,Combined Assaults,2015,3.8
+Australian Capital Territory,Combined Assaults,2016,4.7
+Australian Capital Territory,Combined Assaults,2017,5.1
+Australian Capital Territory,Combined Assaults,2018,4.1
+Australian Capital Territory,Combined Assaults,2019,3.6
+Australian Capital Territory,Combined Assaults,2020,3.8
+Australian Capital Territory,Combined Assaults,2021,3.2
+Australian Capital Territory,Combined Assaults,2022,2.8

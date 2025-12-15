@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 375,
+  "title": "Victimisation Rate Trends by State/Territory",
+  "params": [
+    {
+      "name": "State_selection",
+      "value": "New South Wales",
+      "bind": {
+        "input": "select",
+        "options": [
+          "New South Wales",
+          "Victoria",
+          "Queensland",
+          "South Australia",
+          "Western Australia",
+          "Tasmania",
+          "Northern Territory",
+          "Australian Capital Territory"
+        ],
+        "name": "State/Territory: "
+      }
+    },
+    {
+      "name": "CrimeType_selection",
+      "value": "Physical Assault",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Physical Assault",
+          "Direct Threat",
+          "Indirect Threat",
+          "Combined Threats",
+          "Combined Assaults"
+        ],
+        "name": "Crime Type: "
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/refs/heads/main/dataset/Victimisation_Rate_v1.3.csv"
+  },
+  "transform": [
+    {"filter": "datum['State/Territory'] == State_selection"},
+    {"filter": "datum['Crime Type'] == CrimeType_selection"},
+    {"window": [{"op": "max", "field": "Victimisation Rate", "as": "MaxRate"}]},
+    {"window": [{"op": "min", "field": "Victimisation Rate", "as": "MinRate"}]}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "line", "point": {"filled": false, "fill": "white"}},
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "quantitative",
+          "title": "Year",
+          "axis": {"format": "d"}
+        },
+        "y": {
+          "field": "Victimisation Rate",
+          "type": "quantitative",
+          "title": "Victimisation Rate (%)",
+          "scale": {"domain": [0, 12]}
+        },
+        "tooltip": [
+          {
+            "field": "State/Territory",
+            "type": "nominal",
+            "title": "State/Territory"
+          },
+          {"field": "Year", "type": "quantitative", "title": "Year"},
+          {"field": "Crime Type", "type": "nominal", "title": "Crime Type"},
+          {
+            "field": "Victimisation Rate",
+            "type": "quantitative",
+            "title": "Victimisation Rate (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "red", "strokeDash": [3, 3]},
+      "encoding": {"y": {"field": "Victimisation Rate", "aggregate": "max"}}
+    },
+    {
+      "mark": {"type": "rule", "color": "red", "strokeDash": [3, 3]},
+      "encoding": {"y": {"field": "Victimisation Rate", "aggregate": "min"}}
+    },
+    {
+      "mark": {"type": "text", "align": "right", "dx": 375},
+      "encoding": {
+        "y": {"field": "MaxRate", "aggregate": "max"},
+        "text": {"value": "Highest Rate:"}
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "right", "dx": 375},
+      "encoding": {
+        "y": {"field": "MinRate", "aggregate": "min"},
+        "text": {"value": "Lowest Rate:"}
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 678},
+      "encoding": {
+        "x": {"value": 0},
+        "y": {"field": "MaxRate", "aggregate": "max"},
+        "text": {
+          "aggregate": "max",
+          "field": "MaxRate",
+          "type": "quantitative",
+          "format": ".1f"
+        }
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 678},
+      "encoding": {
+        "x": {"value": 0},
+        "y": {"field": "MinRate", "aggregate": "min"},
+        "text": {
+          "aggregate": "min",
+          "field": "MinRate",
+          "type": "quantitative",
+          "format": ".1f"
+        }
+      }
+    }
+  ]
+}

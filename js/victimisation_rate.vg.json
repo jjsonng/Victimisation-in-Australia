@@ -1,0 +1,169 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "params": [
+    {
+      "name": "Year_selection",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 2008,
+        "max": 2022,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "hconcat": [
+    {
+      "width": 500,
+      "height": 281,
+      "projection": {"type": "mercator"},
+      "view": {"fill": "skyblue"},
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/refs/heads/main/js/NE%20Graticules%2030.json",
+            "format": {"type": "topojson", "feature": "ne_50m_graticules_30"}
+          },
+          "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/refs/heads/main/dataset/Victimisation_Rate_v1.3.csv"
+          },
+          "transform": [
+            {
+              "lookup": "State/Territory",
+              "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/d9b6ab4f5747814642d07f45ee139cf99049fb87/js/Australia_map.json",
+                  "format": {
+                    "type": "topojson",
+                    "feature": "ne_50m_admin_1_states_provinces"
+                  }
+                },
+                "key": "properties.name"
+              },
+              "as": "geo"
+            },
+            {"filter": "datum.Year == Year_selection"},
+            {
+              "aggregate": [
+                {
+                  "op": "mean",
+                  "field": "Victimisation Rate",
+                  "as": "AverageVictimisationRate"
+                }
+              ],
+              "groupby": ["State/Territory", "Year", "geo"]
+            }
+          ],
+          "layer": [
+            {
+              "mark": {
+                "type": "geoshape",
+                "stroke": "black",
+                "strokeWidth": 0.5
+              },
+              "encoding": {
+                "shape": {"field": "geo", "type": "geojson"},
+                "color": {
+                  "field": "AverageVictimisationRate",
+                  "type": "quantitative",
+                  "scale": {"scheme": "goldorange", "domain": [0, 10]},
+                  "legend": {
+                    "title": "Average Victimisation Rate (%)",
+                    "orient": "bottom"
+                  }
+                },
+                "tooltip": [
+                  {"field": "Year", "type": "quantitative", "title": "Year"},
+                  {
+                    "field": "State/Territory",
+                    "type": "nominal",
+                    "title": "State/Territory"
+                  },
+                  {
+                    "field": "AverageVictimisationRate",
+                    "type": "quantitative",
+                    "title": "Average Victimisation Rate (%)",
+                    "format": ".1f"
+                  }
+                ]
+              }
+            },
+            {
+              "transform": [
+                {"filter": "datum['State/Territory'] == 'Northern Territory'"},
+                {
+                  "calculate": "'The Northern Territory has the highest average; rate among all states/territories: ' + format(datum.AverageVictimisationRate, '.1f') + '% in ' + datum.Year",
+                  "as": "text_annotation_raw"
+                },
+                {
+                  "calculate": "split(datum.text_annotation_raw, ';')",
+                  "as": "text_annotation"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": -240,
+                "dy": 111,
+                "fontSize": 10,
+                "fontStyle": "italic",
+                "fontWeight": "bold"
+              },
+              "encoding": {"text": {"field": "text_annotation"}}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 500,
+      "height": 281,
+      "mark": "bar",
+      "data": {
+        "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/refs/heads/main/dataset/Victimisation_Rate_v1.3.csv"
+      },
+      "transform": [{"filter": "datum.Year == Year_selection"}],
+      "encoding": {
+        "x": {
+          "field": "State/Territory",
+          "type": "nominal",
+          "title": "State/Territory",
+          "axis": {"labelAngle": -45}
+        },
+        "y": {
+          "field": "Victimisation Rate",
+          "type": "quantitative",
+          "title": "Victimisation Rate (%)",
+          "scale": {"domain": [0, 35]}
+        },
+        "color": {
+          "field": "Crime Type",
+          "type": "nominal",
+          "scale": {
+            "range": ["#009E73", "#964B00", "#56B4E9", "#FE6100", "#0072B2"]
+          },
+          "legend": {"title": "Crime Type", "orient": "bottom"}
+        },
+        "tooltip": [
+          {"field": "Year", "type": "quantitative", "title": "Year"},
+          {
+            "field": "State/Territory",
+            "type": "nominal",
+            "title": "State/Territory"
+          },
+          {"field": "Crime Type", "type": "nominal", "title": "Crime Type:"},
+          {
+            "field": "Victimisation Rate",
+            "type": "quantitative",
+            "title": "Victimisation Rate (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    }
+  ]
+}

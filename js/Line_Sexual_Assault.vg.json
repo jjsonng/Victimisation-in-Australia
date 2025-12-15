@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 615,
+  "height": 338,
+  "title": "Crime Type: Sexual Assault (Females Only - Male Data Unavailable)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jjsonng/Victimisation-in-Australia/refs/heads/main/dataset/National_4c_v1.1.csv"
+  },
+  "params": [
+    {
+      "name": "Age_selection",
+      "bind": {
+        "input": "select",
+        "options": [null, "18-29 years", "30-44 years", "45 years and over"],
+        "labels": ["Show All", "18-29 years", "30-44 years", "45 years and over"],
+        "name": "Age Group: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum['Crime Type'] == 'Sexual Assault'"},
+    {"filter": "Age_selection == null || datum.Age == Age_selection"},
+    {
+      "window": [
+        {"op": "mean", "field": "Victimisation Rate", "as": "mean_rate"}
+      ]
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "line", "point": true},
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal",
+          "title": "Year",
+          "axis": {"labelAngle": 0}
+        },
+        "y": {
+          "field": "Victimisation Rate",
+          "type": "quantitative",
+          "title": "Victimisation Rate (%)",
+          "scale": {"domain": [0, 4]}
+        },
+        "color": {
+          "field": "Age",
+          "type": "nominal",
+          "scale": {
+            "domain": ["18-29 years", "30-44 years", "45 years and over"],
+            "range": ["#1f77b4", "#ff7f0e", "#2ca02c"]
+          }
+        },
+        "tooltip": [
+          {"field": "Year", "type": "ordinal"},
+          {"field": "Age", "type": "nominal"},
+          {
+            "field": "Victimisation Rate",
+            "type": "quantitative",
+            "title": "Victimisation Rate (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "red", "strokeDash": [3, 3]},
+      "encoding": {"y": {"field": "mean_rate", "aggregate": "mean"}}
+    },
+    {
+      "mark": {"type": "text", "align": "right", "dx": 388},
+      "encoding": {
+        "y": {"field": "mean_rate", "aggregate": "mean"},
+        "text": {"value": "Average Rate:"}
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 700},
+      "encoding": {
+        "x": {"value": 0},
+        "y": {"field": "mean_rate", "aggregate": "mean"},
+        "text": {
+          "aggregate": "mean",
+          "field": "mean_rate",
+          "type": "quantitative",
+          "format": ".1f"
+        }
+      }
+    }
+  ]
+}

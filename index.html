@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Visualisation 2</title>
+    <!-- Import pure.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Victimisation in Australia from 2008 to 2022</h1>
+      <div class="pure-g">
+        <div class="pure-u-7-24">
+          <p class="text-left-1">
+            <b>Victimisation</b> refers to the process of being made a victim of
+            a crime or unfair treatment. It involves individuals experiencing
+            <b>harm, suffering, or loss</b> due to the actions of others.
+            Victimisation can occur in various forms, including
+            <b>physical assault, theft, and emotional abuse</b>. Understanding
+            victimisation is crucial for developing
+            <b>effective prevention strategies and providing support</b> to
+            those affected.
+          </p>
+        </div>
+        <!-- Heatmap graph -->
+        <div class="pure-u-17-24" id="heatmap"></div>
+      </div>
+
+      <!-- Crime Type Description -->
+      <div class="pure-g text-container-2">
+        <div class="pure-u-5-24">
+          <div class="text-2">
+            <p>
+              <b>Physical Assault:</b> A person is physically attacked or
+              harmed.
+            </p>
+          </div>
+          <div class="text-3">
+            <p>
+              <b>Direct Assault:</b> A person is threatened with harm in a
+              face-to-face encounter.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-4 pure-u-5-24">
+          <p>
+            <b>Indirect Assault:</b> Threats of harm made without a face-to-face
+            interaction, such as through phone calls, messages, or other
+            indirect means.
+          </p>
+        </div>
+        <div class="text-5 pure-u-5-24">
+          <p>
+            <b>Combined Threats:</b> Both face-to-face and non face-to-face
+            threatened assaults. If a person has experienced both types, they
+            are counted separately for each but only once in the total
+          </p>
+        </div>
+        <div class="text-6 pure-u-5-24">
+          <p>
+            <b>Combined Assaults:</b> All instances of physical assault and
+            threatened assault. If a person has experienced both physical and
+            threatened assault, they are counted separately for each type but
+            only once in the total
+          </p>
+        </div>
+      </div>
+
+      <h2>Victimisation Rate by Sex and Age Group</h2>
+      <div class="pure-g physical_assault_container">
+        <!-- Physical Assault -->
+        <div class="pure-u-17-24" id="physicalAssault"></div>
+        <div class="pure-u-7-24">
+          <p class="text-right-1">
+            From 2008 to 2022, physical assault victimisation rates in Australia
+            have generally <b>declined</b> across all age groups and sexes.
+            <b>Males, especially those aged 15-29</b>, consistently had higher
+            rates compared to females. The overall downward trend suggests
+            improvements in
+            <b>public safety measures or changes in reporting practices</b> over
+            the years. This decline highlights the effectiveness of
+            <b>targeted interventions and increased awareness</b> about personal
+            safety.
+          </p>
+        </div>
+      </div>
+
+      <div class="pure-g sexual_assault_container">
+        <div class="pure-u-7-24">
+          <p class="text-left-2">
+            From 2008 to 2022, sexual assault victimisation rates for females in
+            Australia varied across age groups. The
+            <b>18-29 years</b> age group saw fluctuations, with a notable
+            increase from <b>1.3 in 2008 to 3.8 in 2021</b>, before dropping to
+            <b>2.3 in 2022</b>. For females aged <b>30-44 years</b>, the rates
+            remained relatively low, peaking at <b>0.8</b> in
+            <b>2016 and 2022</b>. The <b>45 years and over</b> age group
+            consistently had the lowest rates, generally staying below
+            <b>0.3</b> throughout the period.
+          </p>
+        </div>
+        <!-- Sexual Assault -->
+        <div class="pure-u-17-24" id="sexualAssault"></div>
+      </div>
+
+      <h2>Victimisation Rate by Household Crime</h2>
+      <div class="pure-g household_crime_container">
+        <div class="pure-u-7-24">
+          <p class="text-left-3">
+            From 2008 to 2022, household crime victimisation rates in Australia
+            generally <b>declined</b> across various crime types.
+            <b>Break-ins</b> decreased from <b>3.3% in 2008 to 1.8% in 2022</b>,
+            while <b>attempted break-ins</b> fell from <b>3.1% to 1.9%</b>.
+            <b>Motor vehicle theft</b> rates dropped from <b>1.1% to 0.5%</b>,
+            and <b>theft from motor vehicles</b> decreased from
+            <b>4.5% to 2.2%</b>. <b>Malicious property damage</b> saw a
+            significant reduction from <b>11.1% to 3.7%</b>, and
+            <b>other thefts</b> declined from <b>4.4% to 1.9%</b>. These trends
+            indicate a substantial improvement in household security and crime
+            prevention measures over the years.
+          </p>
+        </div>
+        <!-- Household Crime -->
+        <div class="pure-u-17-24" id="householdCrime"></div>
+      </div>
+
+      <h2>Victimisation Rate by State/Territory</h2>
+      <!-- Choropleth map -->
+      <div id="choropleth_map"></div>
+
+      <div class="pure-g trend-container">
+        <!-- Line graph -->
+        <div class="pure-u-17-24" id="trend"></div>
+        <div class="pure-u-7-24">
+          <p class="text-right-2">
+            New South Wales saw a decline from
+            <b>2.8% in 2008 to 1.3% in 2022</b>. Victoria’s rates also decreased
+            from <b>3.3% to 1.6%</b>. Queensland experienced fluctuations,
+            ending at <b>2.3% in 2022</b>. South Australia and Western Australia
+            showed similar downward trends, with rates falling to
+            <b>1.4% and 1.9%</b>, respectively. Tasmania and the Northern
+            Territory had higher initial rates, but both saw reductions, with
+            Tasmania at <b>1.8%</b> and the Northern Territory at
+            <b>4.2% by 2022</b>. The Australian Capital Territory’s rates
+            decreased from <b>2.8% to 1.2%</b>.
+          </p>
+        </div>
+      </div>
+
+      <footer>
+        <small>
+          Dashboard by <a href="https://github.com/jjsonng">Dinh Dung Nguyen</a>. &copy; 2024 All rights reserved.
+        </small>
+        <br />
+        <br />
+        <small>
+          Data Source:&nbsp;
+          <a
+            href="https://www.abs.gov.au/statistics/people/crime-and-justice/crime-victimisation/latest-release"
+          >
+            Australian Bureau of Statistics, Crime Victimisation
+          </a>
+        </small>
+      </footer>
+    </div>
+
+    <script type="text/javascript">
+      var spec1 = "js/victimisation_rate.vg.json";
+      var spec2 = "js/trend.vg.json";
+      var spec3 = "js/heatmap.vg.json";
+      var spec4 = "js/Line_Physical_Assault.vg.json";
+      var spec5 = "js/Line_Sexual_Assault.vg.json";
+      var spec6 = "js/Household_Crime.vg.json";
+
+      vegaEmbed("#choropleth_map", spec1)
+        .then(function (result) {})
+        .catch(console.error);
+      vegaEmbed("#trend", spec2)
+        .then(function (result) {})
+        .catch(console.error);
+      vegaEmbed("#heatmap", spec3)
+        .then(function (result) {})
+        .catch(console.error);
+      vegaEmbed("#physicalAssault", spec4)
+        .then(function (result) {})
+        .catch(console.error);
+      vegaEmbed("#sexualAssault", spec5)
+        .then(function (result) {})
+        .catch(console.error);
+      vegaEmbed("#householdCrime", spec6)
+        .then(function (result) {})
+        .catch(console.error);
+    </script>
+  </body>
+</html>
